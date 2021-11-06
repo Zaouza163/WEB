@@ -28,12 +28,27 @@
   outline: none;
 }
 
-a {
-  text-decoration: none;
+.main-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  color: #ff4b64;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #ff4b64;
+  transition: background-color 0.15s, color 0.15s;
 }
 
-body {
-  min-height: 1000px;
+.main-btn:hover {
+  color: #fff;
+  background-color: #ff4b64;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+a {
+  text-decoration: none;
 }
 
 .clearfix::after {
@@ -159,6 +174,7 @@ body {
 
 .first__form .small-input {
   width: 19%;
+  border-left: none;
 }
 
 .first__form button {
@@ -174,4 +190,266 @@ body {
 .first__form button:hover {
   background-color: #000;
   transition: background-color 0.15s;
+}
+
+/* section Flights */
+.flights {
+  padding-top: 102px;
+  padding-bottom: 23px;
+  background-color: #fff;
+}
+
+.flights__heading {
+  color: #484848;
+  font-size: 30px;
+  float: left;
+}
+
+.flights__links {
+  float: right;
+}
+
+.flights__links ul {
+  list-style-type: none;
+}
+
+.flights__links ul li {
+  display: inline-block;
+}
+
+.flights__links ul li a {
+  color: #484848;
+  font-size: 16px;
+  line-height: 32px;
+  margin-left: 25px;
+}
+
+.flights__links ul li a.active {
+  color: #ff4b64;
+  font-weight: 700;
+}
+
+.flights__table {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.flights__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.flights__table table thead {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table thead td {
+  padding-bottom: 35px;
+}
+
+.flights__table table thead td:last-child {
+  text-align: center;
+}
+
+.flights__table table tbody td {
+  padding: 50px 0;
+  vertical-align: middle;
+}
+
+.flights__table table tbody td:first-child {
+  padding-right: 30px;
+}
+
+.flights__table table tbody td:nth-child(2) {
+  padding-right: 15px;
+}
+
+.flights__table table tbody td:nth-child(4) {
+  padding-right: 25px;
+}
+
+.flights__table table tbody td:last-child {
+  text-align: right;
+}
+
+.flights__table table tbody tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table tbody td img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flights__table table tbody td .text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 24px;
+}
+
+.flights__table table tbody td span {
+  display: block;
+  margin-top: 15px;
+  color: #9a9a9a;
+}
+
+.flights__table__link {
+  text-align: right;
+}
+
+.flights__table__link a {
+  display: inline-block;
+  margin-top: 43px;
+  color: #484848;
+  font-size: 16px;
+}
+
+
+/* section Hotels */
+.hotels {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.hotels__heading {
+  color: #484848;
+  font-size: 30px;
+  float: left;
+}
+
+.hotels__links {
+  float: right;
+}
+
+.hotels__links ul {
+  list-style-type: none;
+}
+
+.hotels__links ul li {
+  display: inline-block;
+}
+
+.hotels__links ul li a {
+  color: #484848;
+  font-size: 16px;
+  line-height: 43px;
+  margin-left: 25px;
+}
+
+.hotels__links ul li a.active {
+  color: #ff4b64;
+  font-weight: 700;
+}
+
+.hotels__items {
+  width: 100%;
+  font-size: 0;
+  margin-top: 53px;
+}
+
+.hotels__item {
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  width: 31.5%;
+  margin-right: 2.75%;
+  margin-bottom: 27px;
+}
+
+.hotels__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.hotels__image {
+  width: 100%;
+  height: 200px;
+}
+
+.hotels__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotels__text {
+  padding: 23px 14px;
+}
+
+.hotels__props {
+  width: 100%;
+  color: #9a9a9a;
+  margin-top: 21px;
+  margin-bottom: 22px;
+}
+
+.hotels__distance {
+  float: left;
+}
+
+.hotels__wifi {
+  float: right;
+}
+
+.hotels__link {
+  text-align: right;
+}
+
+.hotels__link a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #484848;
+  font-size: 16px;
+}
+
+
+/* Footer */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.footer .container {
+  font-size: 0;
+}
+
+.footer__column {
+  vertical-align: top;
+  width: 22.5%;
+  display: inline-block;
+}
+
+.footer__column:nth-child(2) {
+  width: 25.5%;
+}
+
+.footer__column:nth-child(3) {
+  width: 27.3%;
+}
+
+.footer__column:last-child {
+  width: 24.5%;
+}
+
+.footer__title {
+  color: #484848;
+  font-size: 30px;
+  margin-bottom: 52px;
+}
+
+.footer__nav {
+  list-style-type: none;
+}
+
+.footer__nav a {
+  color: #484848;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.footer_mail {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff4b64;
 }
