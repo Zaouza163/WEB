@@ -120,6 +120,48 @@ a {
   background-color: transparent;
 }
 
+.header__burger {
+  display: none;
+}
+
+.header__close {
+  position: relative;
+  display: none;
+}
+
+.header__close span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #fff;
+}
+
+.header__close span:first-child {
+  transform: rotate(45deg);
+}
+
+.header__close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.header__burger span {
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #fff;
+}
+
+.header__burger span:nth-child(2) {
+  margin: 7px 0;
+}
+
+.header__mobile__login {
+  display: none;
+}
+
 
 /* first block */
 .first {
@@ -466,7 +508,52 @@ a {
 
 @media (max-width: 768px) {
   .header__nav {
-    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-color: #212538;
+    text-align: center;
+    display: table;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .header__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: block;
+  }
+  .header__nav__open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .header__nav__wrapper {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .header__nav ul {
+    width: 100%;
+  }
+  .header__nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .header__nav ul li a {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 30px;
   }
   .hotels__item {
     width: 48%;
@@ -505,6 +592,16 @@ a {
   }
   .first__form button {
     width: 20%;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__login {
+    display: none;
+  }
+  .header__mobile__login {
+    display: inline-block;
+    margin-top: 30px;
   }
 }
 

@@ -15,16 +15,28 @@
           TravelCream
         </a>
         <nav class="header__nav">
-          <ul>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Hotels</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Activity</a></li>
-            <li><a href="#">Deals</a></li>
-          </ul>
+          <a href="#" class="header__close">
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__nav__wrapper">
+            <ul>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Trips</a></li>
+              <li><a href="#">Activity</a></li>
+              <li><a href="#">Deals</a></li>
+            </ul>
+            <button class="header__login header__mobile__login">Login</button>
+          </div>
         </nav>
       </div>
       <div class="header__right">
+        <a href="#" class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
         <button class="header__login">Login</button>
       </div>
     </div>
@@ -362,5 +374,20 @@
       </div>
     </div>
   </footer>
+  <script>
+    let burger = document.querySelector('.header__burger');
+    let menu = document.querySelector('.header__nav');
+    let close = document.querySelector('.header__close');
+
+    burger.addEventListener('click', (e) => {
+      e.preventDefault();
+      menu.classList.add('header__nav__open');
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      menu.classList.remove('header__nav__open');
+    })
+  </script>
 </body>
 </html>
